@@ -10,7 +10,7 @@ class SpindlerBattery(Battery):
 
     def needs_service(self):
         timediff = self.current_date - self.last_service_date
-        if timediff.days >= (2*365):
+        if timediff.days >= (3*365):
             return True
         else:
             return False
